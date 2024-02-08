@@ -1,0 +1,15 @@
+Screens in ecomm projects:
+1. login screen 
+2. product listings page (filtering, sorting)
+
+---------------------------------------------------------------------------------------
+spacing (margin and padding)
+
+css                                        class in bootstrap
+
+margin-top                                    mt(1 to 5)
+margin-bottom                                 mb(1 to 5)
+margin-left                                   ms(1 to 5)
+margin-right                                  me(1 to 5) 
+mx                                            horizontal ms&me mx-auto 
+my                                            vertical    mt&mb 
