@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/main.js' %}"></script>
+</head>
+<body>
+    <h1>Template as response</h1>
+    Profile name:<h4>{{name}}</h4>
+    City:<h4>{{city}}</h4>
+    {% if x > y and x > z %}
+    <p>{{x}} is greater</p>
+    {% elif y > x and y > z %}
+    <p>{{y}} is greater</p>
+    {% else %}
+    <p>{{z}} is greater</p>
+    {% endif %}
+
+    <h2>List in elements</h2>
+    {% for x in list %}
+        <p>{{x}}</p>
+    {% endfor %}
+
+    <h4>Product</h4>
+    {% for x in product %}
+        <strong>{{forloop.counter}}</strong>
+         <strong>Name:</strong>{{x.name}}&nbsp; &nbsp;
+         <strong>Category:</strong>{{x.cat}}
+         <p><strong>Price:</strong>{{x.price}}</p>
+    {% endfor %}
+
+<button onclick="display()">Click Here!</button>
+<hr>
+<img src="{% static 'images/iron-man.png' %}" alt="iron man">
+</body>
+</html>
